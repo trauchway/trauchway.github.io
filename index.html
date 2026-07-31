@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teddy Rauchway — Mechanical &amp; Aerospace Engineering</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-mark">T.R.</a>
+    <nav class="nav-links">
+      <a href="#projects">Projects</a>
+      <a href="#about">Components</a>
+      <a href="#contact">Contact</a>
+      <a href="resume.pdf" class="nav-resume" download>Resume ↓</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="blueprint-grid" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <p class="eyebrow">MECHANICAL ENGINEERING — AEROSPACE MINOR — CORNELL UNIVERSITY</p>
+    <h1>Teddy Rauchway</h1>
+    <p class="hero-thesis">I design hardware that ships. Enclosures for fielded defense systems, structures for a collegiate rocket, and whatever the makerspace lathe will let me cut next.</p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-primary">View Projects</a>
+      <a href="mailto:tsr53@cornell.edu" class="btn btn-outline">Get in touch</a>
+    </div>
+  </div>
+  <div class="hero-callout" aria-hidden="true">
+    <span class="dim-line"></span>
+    <span class="callout-label">TOLERANCE: ±0.005"</span>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="projects" id="projects">
+  <div class="section-head">
+    <span class="section-num">SHEET 01</span>
+    <h2>Projects</h2>
+  </div>
+
+  <div class="project-grid">
+
+    <!-- PROJECT CARD TEMPLATE — duplicate this block for each project -->
+    <article class="project-card">
+      <div class="title-block">
+        <div class="tb-row tb-title">
+          <span>PROJECT</span>
+          <strong>Classified Hardware Enclosure</strong>
+        </div>
+        <div class="tb-row">
+          <span>ORG</span><span>ICR, Inc.</span>
+        </div>
+        <div class="tb-row">
+          <span>TOOLS</span><span>SolidWorks / FEA / CFD</span>
+        </div>
+        <div class="tb-row">
+          <span>STATUS</span><span class="status-live">SHIPPED · 20+ SYSTEMS</span>
+        </div>
+      </div>
+      <p class="project-desc">
+        Designed a fully manufacturable, multilayer protective enclosure for classified defense equipment —
+        balancing thermal, structural, and sealing requirements across deployment environments. Led the design
+        effort independently from concept through production-ready drawings.
+      </p>
+      <div class="project-links">
+        <!-- swap in a real repo/case-study link once you have a public writeup -->
+        <a href="#" class="project-link">Case study (coming soon)</a>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <div class="title-block">
+        <div class="tb-row tb-title">
+          <span>PROJECT</span>
+          <strong>Rocketry — Structures Subsystem</strong>
+        </div>
+        <div class="tb-row">
+          <span>ORG</span><span>Cornell Rocketry Project Team</span>
+        </div>
+        <div class="tb-row">
+          <span>TOOLS</span><span>SolidWorks / Composites</span>
+        </div>
+        <div class="tb-row">
+          <span>STATUS</span><span class="status-progress">IN PROGRESS</span>
+        </div>
+      </div>
+      <p class="project-desc">
+        Contributing to structural design, analysis, and fabrication for a high-power collegiate rocket.
+        Supporting propulsion integration and component testing toward a competition launch.
+      </p>
+      <div class="project-links">
+        <a href="#" class="project-link">GitHub repo →</a>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <div class="title-block">
+        <div class="tb-row tb-title">
+          <span>PROJECT</span>
+          <strong>Makerspace Builds</strong>
+        </div>
+        <div class="tb-row">
+          <span>ORG</span><span>Cornell Maker Club</span>
+        </div>
+        <div class="tb-row">
+          <span>TOOLS</span><span>CNC / Electronics / 3D Print</span>
+        </div>
+        <div class="tb-row">
+          <span>STATUS</span><span class="status-progress">ONGOING</span>
+        </div>
+      </div>
+      <p class="project-desc">
+        Personal robotics, mechatronics, and UAV component projects built in the Maker Club lab —
+        motor integration, custom gearboxes, and rapid-prototyped enclosures.
+      </p>
+      <div class="project-links">
+        <a href="#" class="project-link">GitHub repo →</a>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <div class="title-block">
+        <div class="tb-row tb-title">
+          <span>PROJECT</span>
+          <strong>Resin-Printed Components</strong>
+        </div>
+        <div class="tb-row">
+          <span>ORG</span><span>Personal</span>
+        </div>
+        <div class="tb-row">
+          <span>TOOLS</span><span>Elegoo / Chitubox / SolidWorks</span>
+        </div>
+        <div class="tb-row">
+          <span>STATUS</span><span class="status-progress">ONGOING</span>
+        </div>
+      </div>
+      <p class="project-desc">
+        Iterative design-print-test cycles on small mechanical assemblies — tolerancing for press fits,
+        support strategy, and post-processing for functional (not just display) parts.
+      </p>
+      <div class="project-links">
+        <a href="#" class="project-link">GitHub repo →</a>
+      </div>
+    </article>
+    <!-- END TEMPLATE — add more <article class="project-card"> blocks as needed -->
+
+  </div>
+</section>
+
+<!-- ============ ABOUT / SKILLS AS BOM ============ -->
+<section class="about" id="about">
+  <div class="section-head">
+    <span class="section-num">SHEET 02</span>
+    <h2>Bill of Materials</h2>
+  </div>
+  <p class="bom-intro">Every engineer is an assembly of parts. Here's mine.</p>
+
+  <table class="bom-table">
+    <thead>
+      <tr><th>ITEM</th><th>COMPONENT</th><th>SPEC</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>01</td><td>CAD &amp; Simulation</td><td>SolidWorks (CAD, Assemblies, Drawings), SolidWorks Simulation (FEA), SolidWorks Flow (CFD), Fusion 360</td></tr>
+      <tr><td>02</td><td>Fabrication &amp; Machining</td><td>CNC mill &amp; lathe (Red Apron certified), manual machining, sheet metal, composites, 3D printing, laser cutting</td></tr>
+      <tr><td>03</td><td>Electromechanical Systems</td><td>BLDC / brushed DC / servo / stepper integration, ESCs, custom gearboxes, sensors, harness fabrication</td></tr>
+      <tr><td>04</td><td>Microcontrollers &amp; Electronics</td><td>Arduino, Raspberry Pi, STM32, Teensy, ESP32 — prototyping, multimeter &amp; oscilloscope use</td></tr>
+      <tr><td>05</td><td>Programming &amp; Controls</td><td>Python, Bluetooth data integration</td></tr>
+      <tr><td>06</td><td>Certification</td><td>FAA Part 107 Remote Pilot License</td></tr>
+    </tbody>
+  </table>
+
+  <div class="about-note">
+    <p>Cornell University — B.S. Mechanical Engineering, Minor in Aerospace Engineering, Expected May 2028. NCAA Division I Track &amp; Field.</p>
+  </div>
+</section>
+
+<!-- ============ CONTACT / FOOTER ============ -->
+<footer class="footer" id="contact">
+  <div class="footer-title-block">
+    <div class="tb-row"><span>DRAWN BY</span><span>T. Rauchway</span></div>
+    <div class="tb-row"><span>EMAIL</span><span><a href="mailto:tsr53@cornell.edu">tsr53@cornell.edu</a></span></div>
+    <div class="tb-row"><span>GITHUB</span><span><a href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener">github.com/YOUR-USERNAME</a></span></div>
+    <div class="tb-row"><span>LINKEDIN</span><span><a href="#" target="_blank" rel="noopener">linkedin.com/in/YOUR-HANDLE</a></span></div>
+    <div class="tb-row"><span>REV</span><span id="rev-date"></span></div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
