@@ -327,15 +327,43 @@ a:focus-visible, span:focus-visible {
 
 /* ============ FOOTER ============ */
 .footer { background: var(--bg); border-top: 1px solid var(--border); padding: 60px 28px; }
-.footer-title-block {
-  max-width: 520px;
+.footer-inner {
+  max-width: 560px;
   margin: 0 auto;
+  display: flex;
+  align-items: stretch;
+  gap: 0;
   border: 1px solid var(--border);
+}
+.footer-photo {
+  width: 200px;
+  min-width: 200px;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: grayscale(1) contrast(1.05);
+  border-right: 1px solid var(--border);
+}
+.footer-title-block {
+  border: none;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer-title-block .tb-row {
+  padding: 16px 20px;
+  font-size: 0.76rem;
 }
 .footer-title-block .tb-row { color: var(--text); }
 .footer-title-block .tb-row span:first-child { color: var(--text-faint); }
 .footer-title-block a { text-decoration: underline; text-decoration-color: var(--text-faint); }
 .footer-title-block a:hover { text-decoration-color: var(--text); }
+
+@media (max-width: 560px) {
+  .footer-inner { flex-direction: column; }
+  .footer-photo { width: 100%; min-width: 0; height: 260px; border-right: none; border-bottom: 1px solid var(--border); }
+}
 
 @media (max-width: 500px) {
   .section-head { padding-top: 54px; }
