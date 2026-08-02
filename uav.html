@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UAV Systems — Teddy Rauchway</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-mark">T.R.</a>
+    <nav class="nav-links">
+      <a href="index.html#projects">← Back to Portfolio</a>
+      <a href="assets/resume.pdf" class="nav-resume" download>Resume ↓</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero uav-hero">
+  <span class="bracket bracket-tl" aria-hidden="true"></span>
+  <span class="bracket bracket-tr" aria-hidden="true"></span>
+  <span class="bracket bracket-bl" aria-hidden="true"></span>
+  <span class="bracket bracket-br" aria-hidden="true"></span>
+  <div class="hero-inner">
+    <p class="eyebrow">PROJECT DEEP-DIVE</p>
+    <h1>UAV Systems</h1>
+    <p class="hero-thesis">A year-long LIDAR-mapping octocopter built in partnership with Lockheed Martin, followed by a scratch-built fixed-wing autopilot aircraft, designed and flown on my own.</p>
+  </div>
+</section>
+
+<!-- ============ CHAPTER 01 — LOCKHEED MARTIN ============ -->
+<section class="chapter" id="chapter-01">
+  <div class="section-head">
+    <span class="section-num">CHAPTER 01</span>
+    <h2>LIDAR Mapping Octocopter</h2>
+  </div>
+
+  <div class="chapter-body">
+    <div class="title-block chapter-info">
+      <div class="tb-row tb-title"><span>PROJECT</span><strong>Terrain-Mapping LIDAR Octocopter</strong></div>
+      <div class="tb-row"><span>ORG</span><span>Northfield High School × Lockheed Martin</span></div>
+      <div class="tb-row"><span>TIMELINE</span><span>2022–2023 · Year-long Robotics II Program</span></div>
+      <div class="tb-row"><span>TOOLS</span><span>Raspberry Pi / Linux / Slamtec RPLIDAR</span></div>
+      <div class="tb-row"><span>STATUS</span><span class="status status-live"><i></i>FINAL PRESENTATION DELIVERED</span></div>
+    </div>
+
+    <p class="chapter-desc">
+      For a full year, my Robotics II class partnered directly with Lockheed Martin engineers — biweekly
+      Zoom check-ins throughout the year and a final in-person presentation — to design and build an octocopter
+      equipped with our own LIDAR system for terrain mapping and object detection/avoidance. My contribution
+      was the onboard software: running Linux on a Raspberry Pi to interface with a Slamtec RPLIDAR, a
+      low-cost 360° 2D laser scanner, to generate real-time terrain maps in flight.
+    </p>
+
+    <div class="photo-grid">
+      <figure><img src="assets/uav/lm-group-photo.jpg" alt="Robotics II class and Lockheed Martin partners with the octocopter"><figcaption>Final presentation — full team</figcaption></figure>
+      <figure><img src="assets/uav/lm-octocopter-mat.jpg" alt="Octocopter resting on a helipad landing mat"><figcaption>Octocopter on the landing pad</figcaption></figure>
+      <figure><img src="assets/uav/lm-presentation-tent.jpg" alt="Team presenting findings under a tent"><figcaption>Presenting to Lockheed Martin engineers</figcaption></figure>
+      <figure><img src="assets/uav/lm-octocopter-table.jpg" alt="Octocopter and controller staged on a table"><figcaption>Pre-flight staging</figcaption></figure>
+      <figure><img src="assets/uav/lm-presentation-crowd.jpg" alt="Audience watching the final presentation"><figcaption>Final presentation — Q&amp;A</figcaption></figure>
+      <figure><img src="assets/uav/lm-octocopter-case.jpg" alt="Close-up of the octocopter frame and electronics"><figcaption>Frame and onboard electronics</figcaption></figure>
+    </div>
+
+    <div class="project-links">
+      <a href="https://www.instagram.com/p/CsL_58Oumba/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" rel="noopener" class="project-link">View Instagram Post →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CHAPTER 02 — PERSONAL BUILD ============ -->
+<section class="chapter" id="chapter-02">
+  <div class="section-head">
+    <span class="section-num">CHAPTER 02</span>
+    <h2>Scratch-Built Autopilot Aircraft</h2>
+  </div>
+
+  <div class="chapter-body">
+    <div class="title-block chapter-info">
+      <div class="tb-row tb-title"><span>PROJECT</span><strong>Foamboard Fixed-Wing UAV</strong></div>
+      <div class="tb-row"><span>ORG</span><span>Personal Project</span></div>
+      <div class="tb-row"><span>TIMELINE</span><span>Built independently, following the LM program</span></div>
+      <div class="tb-row"><span>TOOLS</span><span>Foamboard / Off-the-Shelf Electronics / Autopilot Firmware</span></div>
+      <div class="tb-row"><span>STATUS</span><span class="status status-live"><i></i>FLOWN SUCCESSFULLY</span></div>
+    </div>
+
+    <p class="chapter-desc">
+      Taking what I'd learned outside of class, I built my own fixed-wing UAV at home — cutting the airframe
+      from foamboard using free plans found online, sourcing the electronics independently, and integrating
+      autopilot functionality using what I'd picked up from the Lockheed Martin program. Went through several
+      prototype generations before the final build flew clean.
+    </p>
+
+    <div class="photo-grid photo-grid-progression">
+      <figure>
+        <img src="assets/uav/personal-prototype.png" alt="Early rough foam prototype aircraft">
+        <figcaption><span class="gen-tag">GEN 1</span>Early prototype</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/uav/personal-final-1.png" alt="Final foamboard aircraft, top-down view">
+        <figcaption><span class="gen-tag gen-tag-final">FINAL</span>Finished build — top view</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/uav/personal-final-2.png" alt="Final foamboard aircraft, rear view showing motor mount">
+        <figcaption><span class="gen-tag gen-tag-final">FINAL</span>Finished build — rear view</figcaption>
+      </figure>
+    </div>
+
+    <div class="video-wrap">
+      <video controls preload="metadata">
+        <source src="assets/uav/flight-video.mp4" type="video/mp4">
+        Your browser doesn't support embedded video — <a href="assets/uav/flight-video.mp4">download the flight footage directly</a>.
+      </video>
+      <p class="video-caption">Flight test — final build</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer" id="contact">
+  <div class="footer-inner">
+    <img src="assets/headshot.jpg" alt="Teddy Rauchway" class="footer-photo">
+    <div class="footer-title-block">
+      <div class="tb-row"><span>DRAWN BY</span><span>T. Rauchway</span></div>
+      <div class="tb-row"><span>EMAIL</span><span><a href="mailto:tsr53@cornell.edu">tsr53@cornell.edu</a></span></div>
+      <div class="tb-row"><span>GITHUB</span><span><a href="https://github.com/trauchway" target="_blank" rel="noopener">github.com/trauchway</a></span></div>
+      <div class="tb-row"><span>LINKEDIN</span><span><a href="https://www.linkedin.com/in/teddy-rauchway-788741354" target="_blank" rel="noopener">linkedin.com/in/teddy-rauchway-788741354</a></span></div>
+      <div class="tb-row"><span>REV</span><span id="rev-date"></span></div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

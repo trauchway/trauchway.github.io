@@ -368,3 +368,74 @@ a:focus-visible, span:focus-visible {
 @media (max-width: 500px) {
   .section-head { padding-top: 54px; }
 }
+
+/* ============ UAV PROJECT PAGE ============ */
+.uav-hero { min-height: 46vh; }
+.chapter { max-width: 1140px; margin: 0 auto; padding: 0 28px 90px; }
+.chapter-body { padding-top: 40px; }
+.chapter-info { max-width: 620px; margin-bottom: 30px; }
+.chapter-desc {
+  max-width: 720px;
+  font-size: 1rem;
+  color: var(--text-dim);
+  margin: 0 0 40px;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  margin-bottom: 40px;
+}
+.photo-grid figure {
+  margin: 0;
+  background: var(--bg-elevated);
+  display: flex;
+  flex-direction: column;
+}
+.photo-grid img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  filter: grayscale(0.15) contrast(1.03);
+}
+.photo-grid figcaption {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.05em;
+  color: var(--text-faint);
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.gen-tag {
+  font-weight: 700;
+  color: var(--signal-blue);
+  border: 1px solid var(--signal-blue);
+  padding: 1px 6px;
+  font-size: 0.62rem;
+}
+.gen-tag-final { color: var(--signal-green); border-color: var(--signal-green); }
+
+.video-wrap {
+  max-width: 720px;
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  padding: 16px;
+}
+.video-wrap video {
+  width: 100%;
+  display: block;
+  background: #000;
+}
+.video-caption {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text-faint);
+  margin: 12px 0 0;
+  letter-spacing: 0.05em;
+}
