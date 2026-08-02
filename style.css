@@ -140,12 +140,25 @@ a:focus-visible, span:focus-visible {
   padding: 14px 28px;
   border: 1px solid var(--border);
   display: inline-block;
-  transition: all 0.15s ease;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+  cursor: pointer;
 }
 .btn-primary { background: var(--text); border-color: var(--text); color: var(--bg); font-weight: 600; }
-.btn-primary:hover { background: #cfcfcf; border-color: #cfcfcf; }
+.btn-primary:hover {
+  background: #cfcfcf;
+  border-color: #cfcfcf;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(255,255,255,0.12);
+}
+.btn-primary:active { transform: translateY(0); box-shadow: none; }
 .btn-outline { color: var(--text); }
-.btn-outline:hover { border-color: var(--border-strong); background: var(--bg-elevated); }
+.btn-outline:hover {
+  border-color: var(--border-strong);
+  background: var(--bg-elevated);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(255,255,255,0.06);
+}
+.btn-outline:active { transform: translateY(0); box-shadow: none; }
 
 .hero-callout {
   position: absolute;
