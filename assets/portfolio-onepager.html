@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teddy Rauchway — One-Pager</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink:          #111111;
+    --ink-dim:      #4A4A4E;
+    --ink-faint:    #7A7A80;
+    --border:       #CFCFCF;
+    --border-strong:#111111;
+    --accent:       #1A5276;
+    --font-display: 'Space Grotesk', sans-serif;
+    --font-mono:    'JetBrains Mono', monospace;
+  }
+  * { box-sizing: border-box; }
+  @page { size: letter; margin: 0.45in; }
+  html, body {
+    margin: 0;
+    background: #FFFFFF;
+    color: var(--ink);
+    font-family: var(--font-mono);
+  }
+  body {
+    max-width: 7.6in;
+    margin: 0 auto;
+    padding: 0.35in 0.1in;
+  }
+
+  /* ============ HEADER ============ */
+  .header {
+    border-bottom: 2px solid var(--border-strong);
+    padding-bottom: 10px;
+    margin-bottom: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .header h1 {
+    font-family: var(--font-display);
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 0;
+  }
+  .header .role-line {
+    font-size: 9.5px;
+    color: var(--ink-dim);
+    letter-spacing: 0.03em;
+    margin-top: 3px;
+  }
+  .contact-line {
+    font-size: 9.5px;
+    color: var(--ink-dim);
+    text-align: right;
+    line-height: 1.6;
+  }
+  .contact-line a { color: var(--ink-dim); text-decoration: none; }
+  .contact-line .site-link {
+    display: block;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 12px;
+    color: var(--accent);
+    text-decoration: underline;
+  }
+  .contact-line .site-link:hover { color: var(--ink); }
+
+  /* ============ INTRO ============ */
+  .intro {
+    font-size: 10.5px;
+    color: var(--ink);
+    line-height: 1.5;
+    margin: 0 0 4px;
+    max-width: 100%;
+  }
+  .intro-note {
+    font-size: 10.5px;
+    color: var(--ink);
+    line-height: 1.5;
+    margin: 0 0 16px;
+    max-width: 100%;
+  }
+
+  /* ============ SECTION LABEL ============ */
+  .section-label {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin: 0 0 8px;
+  }
+  .section-label .num {
+    font-size: 8.5px;
+    letter-spacing: 0.12em;
+    color: var(--ink-faint);
+  }
+  .section-label h2 {
+    font-family: var(--font-display);
+    font-size: 12.5px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    margin: 0;
+    color: var(--ink);
+  }
+  .section-label .rule {
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  /* ============ PROJECT GRID ============ */
+  .project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+  .card {
+    border: 1px solid var(--border);
+    padding: 9px 11px 10px;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  .card-title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 8px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+  }
+  .card-title-row strong {
+    font-family: var(--font-display);
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--ink);
+  }
+  .card-org {
+    font-size: 8px;
+    letter-spacing: 0.04em;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+    text-align: right;
+  }
+  .card p {
+    font-family: 'Inter', sans-serif;
+    font-size: 8.7px;
+    line-height: 1.42;
+    color: var(--ink-dim);
+    margin: 0;
+  }
+
+  /* ============ CARD WITH IMAGE ============ */
+  .card-with-image {
+    display: flex;
+    gap: 9px;
+  }
+  .card-thumb {
+    flex: 0 0 1.5in;
+    height: 1.15in;
+    border: 1px solid var(--border);
+    overflow: hidden;
+  }
+  .card-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .card-body {
+    flex: 1;
+    min-width: 0;
+  }
+  .card-with-image .card-title-row,
+  .card-with-image .card-body p { margin-left: 0; }
+
+  /* ============ CLOSING ============ */
+  .closing {
+    border-top: 2px solid var(--border-strong);
+    padding-top: 9px;
+    font-size: 9px;
+    line-height: 1.5;
+    color: var(--ink-dim);
+  }
+  .closing strong { color: var(--ink); font-weight: 700; }
+
+  @media print {
+    body { padding: 0; }
+    a { color: inherit !important; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <h1>Teddy S. Rauchway</h1>
+    <p class="role-line">Mechanical &amp; Aerospace Engineering — Cornell University, Expected May 2028</p>
+  </div>
+  <div class="contact-line">
+    Ithaca, NY&nbsp;&nbsp;|&nbsp;&nbsp;(720) 275-9106<br>
+    <a href="mailto:tsr53@cornell.edu">tsr53@cornell.edu</a><br>
+    <a href="https://trauchway.github.io" class="site-link" target="_blank" rel="noopener">trauchway.github.io</a>
+  </div>
+</div>
+
+<p class="intro">
+  I build and test hardware myself — from CAD and CFD through fabrication, integration, and field or flight
+  test — rather than stopping at a design review. That ownership runs from a classified defense enclosure
+  now planned for fielded deployment, to UAVs I've personally built, wired, and flown, to a self-taught CFD
+  study measuring real aerodynamic loads on a wing I designed from scratch.
+</p>
+<p class="intro-note">
+  Full project write-ups, CAD files, and build photos/videos available at the site linked above.
+</p>
+
+<div class="section-label">
+  <span class="num">SHEET 01</span>
+  <h2>Projects</h2>
+  <span class="rule"></span>
+</div>
+
+<div class="project-grid">
+
+  <div class="card">
+    <div class="card-title-row">
+      <strong>Classified Hardware Enclosure</strong>
+      <span class="card-org">ICR, Inc.</span>
+    </div>
+    <p>
+      Owned a classified defense hardware enclosure from concept to fielded systems — independently leading
+      CAD, CFD/FEA analysis, and production drawings for a multilayer protective enclosure balancing thermal,
+      structural, and sealing requirements. Now planned for integration across multiple fielded defense systems.
+    </p>
+  </div>
+
+  <div class="card card-with-image">
+    <div class="card-thumb">
+      <img src="f1wing/f1wing-cover.png" alt="CFD velocity streamlines over the F1 front wing">
+    </div>
+    <div class="card-body">
+      <div class="card-title-row">
+        <strong>F1 Front Wing Design &amp; CFD</strong>
+        <span class="card-org">Personal Project</span>
+      </div>
+      <p>
+        Self-initiated a deep dive into SolidWorks Premium's Flow Simulation tool, designing a multi-element
+        F1-style front wing from scratch with no class or team behind it. Ran an external flow analysis at
+        100 mph and measured 347.5 N (≈78 lbf) of downforce by integrating pressure loads across the wing.
+      </p>
+    </div>
+  </div>
+
+  <div class="card card-with-image">
+    <div class="card-thumb">
+      <img src="uav/lm-octocopter-case.jpg" alt="Close-up of the hexacopter frame and onboard electronics">
+    </div>
+    <div class="card-body">
+      <div class="card-title-row">
+        <strong>UAV Systems</strong>
+        <span class="card-org">Lockheed Martin × Northfield High School / Personal</span>
+      </div>
+      <p>
+        Built and flew UAVs hands-on, not just designed them: as a Northfield High School (Denver, CO) student,
+        worked in tandem with Lockheed Martin engineers to build a LIDAR-mapping hexacopter, running onboard
+        Raspberry Pi/LIDAR mapping software myself. Then cut, wired, and flight-tested a scratch-built
+        foamboard fixed-wing aircraft through several prototypes until it flew clean.
+      </p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title-row">
+      <strong>Pulse Power</strong>
+      <span class="card-org">Cornell Makeathon 2026</span>
+    </div>
+    <p>
+      Designed, built, and demoed a wearable sleep-stage-detection device in a single 24-hour hackathon,
+      using heart rate and skin temperature sensing to wake the user at the end of a REM cycle. Built with
+      teammates Sani Mohottige and Liam Alcalay.
+    </p>
+  </div>
+
+  <div class="card">
+    <div class="card-title-row">
+      <strong>Makerspace Builds</strong>
+      <span class="card-org">Cornell Maker Club</span>
+    </div>
+    <p>
+      Ongoing personal robotics, mechatronics, and UAV-component projects in the Maker Club lab — motor
+      integration, custom gearboxes, and rapid-prototyped enclosures using CNC, electronics, and 3D printing.
+    </p>
+  </div>
+
+  <div class="card">
+    <div class="card-title-row">
+      <strong>Vibrating Grape Filtration</strong>
+      <span class="card-org">Cornell — Class Project</span>
+    </div>
+    <p>
+      Designed and built the motor-driven vibration linkage for a filtration tray that separates spotted
+      lanternfly contamination from grape juice during harvest, sourcing components from McMaster-Carr. Built
+      with Flynn Basehart, Kathryn Moskal, Emma Harshberger, and Gavin Sneyd.
+    </p>
+  </div>
+
+</div>
+
+<div class="closing">
+  <strong>Cornell Maker Club Executive Board</strong> (Jan 2026–Present) — overseeing makerspace lab
+  operations and training members on machinery and safety protocols — and <strong>Red Apron
+  certified</strong> (mill &amp; lathe), reflecting ongoing hands-on systems work and technical
+  leadership beyond individual projects.
+</div>
+
+</body>
+</html>
