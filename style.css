@@ -143,13 +143,30 @@ a:focus-visible, span:focus-visible {
   transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease, border-color 0.15s ease;
   cursor: pointer;
 }
-.btn-primary { background: var(--text); border-color: var(--text); color: var(--bg); font-weight: 600; }
+.btn-primary {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: var(--bg);
+  border-color: var(--text);
+  color: var(--bg);
+  font-weight: 600;
+  transition: color 0.28s ease, transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--text);
+  transition: transform 0.32s cubic-bezier(0.65, 0, 0.35, 1);
+}
 .btn-primary:hover {
-  background: #cfcfcf;
-  border-color: #cfcfcf;
+  color: var(--text);
   transform: translateY(-2px);
   box-shadow: 0 6px 18px rgba(255,255,255,0.12);
 }
+.btn-primary:hover::before { transform: translateX(100%); }
 .btn-primary:active { transform: translateY(0); box-shadow: none; }
 .btn-outline { color: var(--text); }
 .btn-outline:hover {
