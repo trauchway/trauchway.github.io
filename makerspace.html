@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Iron Man Mark III Helmet — Teddy Rauchway</title>
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-mark">T.R.</a>
+    <nav class="nav-links">
+      <a href="index.html#projects">← Back to Portfolio</a>
+      <a href="assets/resume.pdf" class="nav-resume" download>Resume ↓</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero uav-hero">
+  <span class="bracket bracket-tl" aria-hidden="true"></span>
+  <span class="bracket bracket-tr" aria-hidden="true"></span>
+  <span class="bracket bracket-bl" aria-hidden="true"></span>
+  <span class="bracket bracket-br" aria-hidden="true"></span>
+  <div class="hero-inner">
+    <p class="eyebrow">PROJECT DEEP-DIVE</p>
+    <h1>Iron Man Mark III Helmet</h1>
+    <p class="hero-thesis">A functional articulating helmet that opens and closes like in the movie — multiple servo motors coordinated by an Arduino, running on a custom rechargeable battery pack I built from reclaimed cells.</p>
+  </div>
+  <div class="hero-callout" aria-hidden="true">
+    <span class="dim-line"></span>
+    <span class="callout-label">STATUS: IN DEVELOPMENT</span>
+  </div>
+</section>
+
+<!-- ============ ORIGIN NOTE ============ -->
+<div class="origin-wrap">
+  <div class="origin-note">
+    <span class="origin-label">First Build — Not Original Design</span>
+    <p>
+      Before this, my first Arduino project was a Sesame robot, built by following a public build guide
+      and its accompanying YouTube tutorial — a guided tutorial build, not something I designed myself.
+      It's where I picked up servo control and basic circuits, which carried directly into the helmet below.
+    </p>
+    <a href="https://github.com/dorianborian/sesame-robot/" target="_blank" rel="noopener" class="origin-link">View build guide →</a>
+  </div>
+</div>
+
+<!-- ============ CHAPTER 01 ============ -->
+<section class="chapter" id="chapter-01">
+  <div class="section-head">
+    <span class="section-num">CHAPTER 01</span>
+    <h2>Iron Man Mark III Helmet</h2>
+  </div>
+
+  <div class="chapter-body">
+    <div class="title-block chapter-info">
+      <div class="tb-row tb-title"><span>PROJECT</span><strong>Iron Man Mark III Helmet</strong></div>
+      <div class="tb-row"><span>ORG</span><span>Cornell Maker Club</span></div>
+      <div class="tb-row"><span>TIMELINE</span><span>Cornell Maker Club Lab · Ongoing</span></div>
+      <div class="tb-row"><span>TOOLS</span><span>Arduino / Servo Motors / 18650 Li-ion Cells / Buck Converter</span></div>
+      <div class="tb-row"><span>STATUS</span><span class="status status-progress"><i></i>IN DEVELOPMENT</span></div>
+    </div>
+
+    <p class="chapter-desc">
+      Built a functional Iron Man Mark III-style helmet with an articulating faceplate that opens and closes
+      like in the movie, driven by multiple servo motors coordinated through an Arduino. Getting the timing
+      and linkage geometry right so the plates move cleanly without binding has been most of the mechanical
+      work.
+    </p>
+
+    <p class="chapter-desc">
+      To get it running wireless instead of tethered to a bench supply, I built a custom rechargeable battery
+      pack from reclaimed 18650 lithium-ion cells pulled from old laptop batteries, paired with a buck
+      converter to regulate voltage and a charging circuit — so the helmet is self-powered and rechargeable
+      like any other battery-powered device, not something that needs to stay plugged into a power supply.
+    </p>
+
+    <div class="roadmap-callout">
+      <span class="roadmap-label">ROADMAP — NEXT UP</span>
+      <div class="roadmap-items">
+        <span class="roadmap-item">Voice-activated control (Jarvis-style)</span>
+        <span class="roadmap-item">AI-driven functionality</span>
+      </div>
+    </div>
+
+    <p class="media-label">Media</p>
+    <div class="media-placeholder">
+      Photos &amp; video — coming soon
+    </div>
+    <!--
+      Drop files into assets/makerspace/ and replace the placeholder above with, e.g.:
+
+      <div class="photo-grid">
+        <figure>
+          <img src="assets/makerspace/helmet-open.jpg" alt="Helmet faceplate in the open position">
+          <figcaption>Faceplate — open</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/makerspace/helmet-closed.jpg" alt="Helmet faceplate in the closed position">
+          <figcaption>Faceplate — closed</figcaption>
+        </figure>
+      </div>
+
+      <div class="video-wrap">
+        <video controls preload="metadata">
+          <source src="assets/makerspace/helmet-demo.mp4" type="video/mp4">
+          Your browser doesn't support embedded video — <a href="assets/makerspace/helmet-demo.mp4">download the demo footage directly</a>.
+        </video>
+        <p class="video-caption">Articulation demo — open/close cycle</p>
+      </div>
+    -->
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer" id="contact">
+  <div class="footer-inner">
+    <img src="assets/headshot.jpg" alt="Teddy Rauchway" class="footer-photo">
+    <div class="footer-title-block">
+      <div class="tb-row"><span>DRAWN BY</span><span>T. Rauchway</span></div>
+      <div class="tb-row"><span>EMAIL</span><span><a href="mailto:tsr53@cornell.edu">tsr53@cornell.edu</a></span></div>
+      <div class="tb-row"><span>GITHUB</span><span><a href="https://github.com/trauchway" target="_blank" rel="noopener">github.com/trauchway</a></span></div>
+      <div class="tb-row"><span>LINKEDIN</span><span><a href="https://www.linkedin.com/in/teddy-rauchway-788741354" target="_blank" rel="noopener">linkedin.com/in/teddy-rauchway-788741354</a></span></div>
+      <div class="tb-row"><span>REV</span><span id="rev-date"></span></div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

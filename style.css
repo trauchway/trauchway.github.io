@@ -534,6 +534,85 @@ a:focus-visible, span:focus-visible {
   color: var(--signal-green);
 }
 
+/* ============ ROADMAP CALLOUT ============ */
+.roadmap-callout {
+  max-width: 720px;
+  border: 1px solid var(--border-strong);
+  background: var(--bg-elevated);
+  padding: 20px 24px;
+  margin: 0 0 40px;
+}
+.roadmap-callout .roadmap-label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  color: var(--text-faint);
+  margin-bottom: 14px;
+}
+.roadmap-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.roadmap-item {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+  color: var(--signal-blue);
+  border: 1px solid var(--signal-blue);
+  padding: 7px 14px;
+}
+
+/* ============ ORIGIN NOTE ============ */
+.origin-wrap {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 50px 28px 0;
+}
+.origin-note {
+  max-width: 720px;
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  padding: 18px 22px;
+}
+.origin-note .origin-label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  margin-bottom: 10px;
+}
+.origin-note p {
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: var(--text-dim);
+  margin: 0 0 12px;
+}
+.origin-note .origin-link {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  color: var(--text-dim);
+  text-decoration: underline;
+  text-decoration-color: var(--text-faint);
+}
+.origin-note .origin-link:hover { color: var(--text); text-decoration-color: var(--text); }
+
+/* ============ MEDIA PLACEHOLDER ============ */
+.media-placeholder {
+  max-width: 720px;
+  border: 1px dashed var(--border);
+  padding: 40px 20px;
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.05em;
+  color: var(--text-faint);
+  margin: 0 0 40px;
+}
+
 /* ============ LIGHTBOX ============ */
 .lightbox {
   position: fixed;
