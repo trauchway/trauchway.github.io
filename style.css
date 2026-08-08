@@ -40,7 +40,7 @@ a:focus-visible, span:focus-visible {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(10,10,11,0.88);
+  background: rgba(10,10,11,0.55);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border);
 }
