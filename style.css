@@ -264,6 +264,11 @@ a:focus-visible, span:focus-visible {
 .status-live i { background: var(--signal-green); box-shadow: 0 0 6px var(--signal-green); }
 .status-progress { color: var(--signal-blue); }
 .status-progress i { background: var(--signal-blue); }
+.status-compact {
+  white-space: nowrap;
+  font-size: clamp(0.56rem, 2.4vw, 0.66rem);
+  letter-spacing: 0.01em;
+}
 
 .project-desc {
   padding: 18px 16px;
