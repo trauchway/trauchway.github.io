@@ -89,8 +89,8 @@
     <div class="title-block chapter-info">
       <div class="tb-row tb-title"><span>PROJECT</span><strong>Foamboard Fixed-Wing UAV</strong></div>
       <div class="tb-row"><span>ORG</span><span>Personal Project</span></div>
-      <div class="tb-row"><span>TIMELINE</span><span>Built independently, following the LM program</span></div>
-      <div class="tb-row"><span>TOOLS</span><span>Foamboard / Off-the-Shelf Electronics / Autopilot Firmware</span></div>
+      <div class="tb-row"><span>TIMELINE</span><span>2023 · Built independently, following the LM program</span></div>
+      <div class="tb-row"><span>TOOLS</span><span>Foamboard / Pixhawk + ArduPilot / Off-the-Shelf Electronics</span></div>
       <div class="tb-row"><span>STATUS</span><span class="status status-live"><i></i>FLOWN SUCCESSFULLY</span></div>
     </div>
 
@@ -99,6 +99,14 @@
       from foamboard using free plans found online, sourcing the electronics independently, and integrating
       autopilot functionality using what I'd picked up from the Lockheed Martin program. Went through several
       prototype generations before the final build flew clean.
+    </p>
+
+    <p class="chapter-desc">
+      The autopilot was ArduPilot running on a Pixhawk, wired inline between the RC receiver and the servos so
+      every stick input passed through the flight controller first. In Manual mode the Pixhawk just forwarded
+      my inputs and the plane flew like any other RC aircraft; switching to an assisted mode — FBWA, RTL, or
+      Auto — stopped the pass-through and handed control to the Pixhawk, which flew the plane itself off its
+      own IMU and GPS. Full manual control when I wanted it, full autopilot when I switched modes.
     </p>
 
     <div class="photo-grid photo-grid-progression">
