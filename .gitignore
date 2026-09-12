@@ -1,1 +1,5 @@
 .claude/settings.local.json
+
+# Raw phone/camera footage kept locally for re-encoding; only the
+# compressed .mp4 outputs in assets/homescreen_media/ are published.
+assets/homescreen_media/_source/

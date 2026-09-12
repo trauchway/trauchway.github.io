@@ -90,6 +90,43 @@ a:focus-visible, span:focus-visible {
   padding: 40px 28px;
   border-bottom: 1px solid var(--border);
 }
+/* ============ HERO VIDEO REEL (homepage) ============ */
+.hero-reel-section { isolation: isolate; }
+.hero-reel {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+.hero-reel-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1.1s ease;
+  filter: grayscale(0.35) contrast(1.05) brightness(0.55);
+}
+.hero-reel-video.is-active { opacity: 1; }
+.hero-reel::after { content: none; }
+.hero-reel.is-ready::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 1200px 700px at 50% 32%, rgba(10,10,11,0.2), transparent 68%),
+    linear-gradient(180deg,
+      rgba(10,10,11,0.6) 0%,
+      rgba(10,10,11,0.38) 32%,
+      rgba(10,10,11,0.5) 60%,
+      rgba(10,10,11,0.82) 88%,
+      rgba(10,10,11,0.96) 100%);
+}
+@media (max-width: 700px) {
+  .hero-reel-video { filter: grayscale(0.35) contrast(1.05) brightness(0.45); }
+}
+
 .bracket {
   position: absolute;
   width: 28px;
