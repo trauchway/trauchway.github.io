@@ -469,6 +469,7 @@ a:focus-visible, span:focus-visible {
   gap: 34px;
 }
 .about-info .title-block { border-bottom: none; max-width: 640px; }
+.about-info .tb-row > *:last-child { flex: 1; text-align: right; }
 .about-info .chapter-desc { margin: 0; max-width: none; }
 @media (max-width: 780px) {
   .about-profile { grid-template-columns: 1fr; }
