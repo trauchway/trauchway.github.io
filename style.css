@@ -184,7 +184,7 @@ a:focus-visible, span:focus-visible {
   position: relative;
   isolation: isolate;
   overflow: hidden;
-  background: var(--bg);
+  background: transparent;
   border-color: var(--text);
   color: var(--bg);
   font-weight: 600;
@@ -208,7 +208,7 @@ a:focus-visible, span:focus-visible {
 .btn-outline { color: var(--text); }
 .btn-outline:hover {
   border-color: var(--border-strong);
-  background: var(--bg-elevated);
+  background: rgba(255,255,255,0.06);
   transform: translateY(-2px);
   box-shadow: 0 6px 18px rgba(255,255,255,0.06);
 }
