@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ICR Enclosure Project — Teddy Rauchway</title>
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-mark">T.R.</a>
+    <nav class="nav-links">
+      <a href="index.html#projects">← Back to Portfolio</a>
+      <a href="assets/resume.pdf" class="nav-resume" download>Resume ↓</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero hero-text">
+  <span class="bracket bracket-tl" aria-hidden="true"></span>
+  <span class="bracket bracket-tr" aria-hidden="true"></span>
+  <span class="bracket bracket-bl" aria-hidden="true"></span>
+  <span class="bracket bracket-br" aria-hidden="true"></span>
+  <div class="hero-inner">
+    <p class="eyebrow">PROJECT DEEP-DIVE</p>
+    <h1>ICR Enclosure Project</h1>
+    <p class="hero-thesis">A clean-sheet redesign of the motorized enclosure that protects fielded equipment, trading a belt-driven dome that needed constant tuning for a self-closing, bolt-together clamshell that is more than 40% lighter.</p>
+  </div>
+  <div class="hero-callout" aria-hidden="true">
+    <span class="dim-line"></span>
+    <span class="callout-label">DESIGN WEIGHT: −40%+ VS. LEGACY UNIT</span>
+  </div>
+</section>
+
+<!-- ============ CHAPTER 01 ============ -->
+<section class="chapter" id="chapter-01">
+  <div class="section-head">
+    <span class="section-num">CHAPTER 01</span>
+    <h2>The Design Challenge</h2>
+  </div>
+
+  <div class="chapter-body">
+    <div class="title-block chapter-info">
+      <div class="tb-row tb-title"><span>PROJECT</span><strong>Motorized Protective Enclosure</strong></div>
+      <div class="tb-row"><span>ORG</span><span>ICR, Inc.</span></div>
+      <div class="tb-row"><span>ROLE</span><span>Mechanical design and simulation</span></div>
+      <div class="tb-row"><span>TIMELINE</span><span>June – August 2026</span></div>
+      <div class="tb-row"><span>TOOLS</span><span>SolidWorks / Motion / Flow Simulation (CFD) / Simulation (FEA)</span></div>
+      <div class="tb-row"><span>STATUS</span><span class="status status-live status-compact"><i></i>DESIGN COMPLETE · FIELDING TO 20+ SYSTEMS</span></div>
+    </div>
+
+    <p class="chapter-desc">
+      Several of ICR's fielded systems sit inside a motorized enclosure that closes to protect sensitive
+      equipment from rain, wind, and dust. The existing unit did its job, but it was hard to live with. Its
+      belt-driven mechanism had too many moving parts and needed tedious manual tuning, and it was large and
+      heavy enough that shipping it was a project in itself.
+    </p>
+
+    <p class="chapter-desc">
+      My task was to design a replacement from scratch. It needed a simpler mechanism, maintenance a field
+      technician could handle, and a smaller, lighter package to ship. When open, the lids also had to clear
+      the ground and keep out of the equipment's required field of view.
+    </p>
+  </div>
+</section>
+
+<!-- ============ CHAPTER 02 ============ -->
+<section class="chapter" id="chapter-02">
+  <div class="section-head">
+    <span class="section-num">CHAPTER 02</span>
+    <h2>A Simpler Mechanism</h2>
+  </div>
+
+  <div class="chapter-body">
+    <p class="chapter-desc">
+      The first idea came from an unlikely place: a lunchbox cooler, whose curved lid swings open on one
+      simple pivot. A single full-size lid would need too much clearance, so I split it into two quarter-round
+      halves that open away from each other like a clamshell. Over several rounds of prototypes I moved the
+      pivot and refined the lid path until it met the clearance and field-of-view requirements.
+    </p>
+
+    <p class="chapter-desc">
+      The key move was adding counterweights. With each lid balanced about its pivot, the motor no longer has
+      to hold the lid up; it only has to move it. A gas spring biases the lids closed, a hydraulic damper
+      softens the end of the closing stroke, and a stepper motor with a 10:1 gearbox replaces the belt drive.
+    </p>
+
+    <figure class="diagram-wrap">
+      <svg class="diagram" viewBox="0 0 720 440" role="img" aria-labelledby="clamshell-title clamshell-desc">
+        <title id="clamshell-title">Clamshell lid motion, end view</title>
+        <desc id="clamshell-desc">Line drawing of a box-shaped base with two quarter-round lids that meet at the top when closed. Each lid pivots at the outer top corner of the base and swings outward and down to open, while a counterweight arm on the pivot swings up to balance it.</desc>
+
+        <defs>
+          <marker id="arrow-head" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+            <path d="M0,0 L10,5 L0,10 Z" class="dg-accent-fill"/>
+          </marker>
+        </defs>
+
+        <!-- ground -->
+        <line x1="40" y1="400" x2="680" y2="400" class="dg-ground"/>
+        <g class="dg-hatch">
+          <line x1="70" y1="400" x2="58" y2="412"/><line x1="130" y1="400" x2="118" y2="412"/>
+          <line x1="190" y1="400" x2="178" y2="412"/><line x1="250" y1="400" x2="238" y2="412"/>
+          <line x1="310" y1="400" x2="298" y2="412"/><line x1="370" y1="400" x2="358" y2="412"/>
+          <line x1="430" y1="400" x2="418" y2="412"/><line x1="490" y1="400" x2="478" y2="412"/>
+          <line x1="550" y1="400" x2="538" y2="412"/><line x1="610" y1="400" x2="598" y2="412"/>
+          <line x1="670" y1="400" x2="658" y2="412"/>
+        </g>
+
+        <!-- base frame -->
+        <rect x="250" y="230" width="220" height="170" class="dg-solid"/>
+
+        <!-- open lids (phantom), rotated about each pivot -->
+        <g transform="rotate(150 470 230)">
+          <path d="M360,230 L470,230 A110,110 0 0,0 360,120 Z" class="dg-phantom"/>
+          <line x1="470" y1="230" x2="410" y2="320" class="dg-phantom"/>
+          <rect x="396" y="312" width="24" height="16" class="dg-phantom"/>
+        </g>
+        <g transform="rotate(-150 250 230)">
+          <path d="M360,230 L250,230 A110,110 0 0,1 360,120 Z" class="dg-phantom"/>
+          <line x1="250" y1="230" x2="310" y2="320" class="dg-phantom"/>
+          <rect x="300" y="312" width="24" height="16" class="dg-phantom"/>
+        </g>
+
+        <!-- closed lids (solid) -->
+        <path d="M360,230 L470,230 A110,110 0 0,0 360,120 Z" class="dg-solid"/>
+        <path d="M360,230 L250,230 A110,110 0 0,1 360,120 Z" class="dg-solid"/>
+
+        <!-- counterweight arms, closed position -->
+        <line x1="470" y1="230" x2="410" y2="320" class="dg-solid"/>
+        <rect x="396" y="312" width="24" height="16" class="dg-solid dg-fill"/>
+        <line x1="250" y1="230" x2="310" y2="320" class="dg-solid"/>
+        <rect x="300" y="312" width="24" height="16" class="dg-solid dg-fill"/>
+
+        <!-- lid swing path -->
+        <path d="M372,112 A155.6,155.6 0 0,1 612,266" class="dg-motion" marker-end="url(#arrow-head)"/>
+
+        <!-- pivots -->
+        <circle cx="470" cy="230" r="5" class="dg-pivot"/>
+        <circle cx="250" cy="230" r="5" class="dg-pivot"/>
+
+        <!-- labels -->
+        <g class="dg-label">
+          <line x1="330" y1="150" x2="200" y2="70" class="dg-leader"/>
+          <text x="196" y="64" text-anchor="end">LID, CLOSED</text>
+
+          <line x1="600" y1="200" x2="640" y2="120" class="dg-leader"/>
+          <text x="644" y="112" text-anchor="middle">LID, OPEN</text>
+
+          <line x1="470" y1="230" x2="560" y2="330" class="dg-leader"/>
+          <text x="564" y="346">PIVOT</text>
+
+          <line x1="396" y1="320" x2="330" y2="370" class="dg-leader"/>
+          <text x="326" y="384" text-anchor="end">COUNTERWEIGHT</text>
+
+          <text x="360" y="280" text-anchor="middle" class="dg-label-faint">BASE FRAME</text>
+        </g>
+      </svg>
+      <figcaption>Conceptual illustration of the clamshell motion (end view). Solid lines are closed; dashed lines are open. Not production geometry.</figcaption>
+    </figure>
+
+    <div class="feature-callout">
+      <span class="feature-label">DESIGNED FOR MANUFACTURING &amp; ASSEMBLY</span>
+      <dl class="feature-list">
+        <div><dt>Bolt-together frame</dt><dd>No welding in the main structure, so it ships flat and goes together in the field.</dd></div>
+        <div><dt>Repeated parts</dt><dd>Four base panel frames from two designs, each mirrored, and both lids use the same frame.</dd></div>
+        <div><dt>Corrugated skin</dt><dd>Sheet-metal exterior that is stiff, light, and economical.</dd></div>
+        <div><dt>Lid seal</dt><dd>Keeps weather out when the lids are closed.</dd></div>
+      </dl>
+    </div>
+
+    <table class="spec-table">
+      <thead>
+        <tr><th scope="col"></th><th scope="col">Legacy enclosure</th><th scope="col">Redesign</th></tr>
+      </thead>
+      <tbody>
+        <tr><th scope="row">Actuation</th><td>Belt drive, manually tuned</td><td>Geared motor, counterbalanced lids</td></tr>
+        <tr><th scope="row">Weight</th><td>Baseline</td><td>More than 40% lighter</td></tr>
+        <tr><th scope="row">Shipping &amp; assembly</th><td>Large, awkward to ship</td><td>Flat-pack, bolt-together frame</td></tr>
+        <tr><th scope="row">Lids</th><td>Single dome mechanism</td><td>Two identical clamshell lids</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ============ CHAPTER 03 ============ -->
+<section class="chapter" id="chapter-03">
+  <div class="section-head">
+    <span class="section-num">CHAPTER 03</span>
+    <h2>Analysis That Shaped the Design</h2>
+  </div>
+
+  <div class="chapter-body">
+    <p class="media-label">Motion — Taking the Load Off the Motor</p>
+    <p class="chapter-desc">
+      I used SolidWorks Motion to simulate the full open, hold, and close cycle and to size the motor. The
+      early concept needed about 100 in-lb of torque just to hold a lid open, so the motor was always working.
+      With the final counterweight and gas-spring arrangement, simulated holding torque at full open dropped
+      to nearly zero. When the lid is closed, the large load that keeps it shut in wind goes into a mechanical
+      hard stop, not the motor.
+    </p>
+
+    <div class="result-callout">
+      <span class="result-label">SIMULATED HOLDING TORQUE, LID OPEN</span>
+      <span class="result-value">~100 → ~0 in-lb</span>
+      <span class="result-label">EARLY CONCEPT → FINAL DESIGN</span>
+    </div>
+
+    <p class="media-label">Wind — Finding the Worst Case</p>
+    <p class="chapter-desc">
+      I ran CFD on a simplified model in an 80 mph wind. Wind on the rounded outer surface tends to push the
+      lids closed, which works in the design's favor. The harder case is a "scoop": one lid stuck open with its
+      concave side facing the wind, which tries to pry it farther open. That case set the load for the
+      structural analysis.
+    </p>
+
+    <p class="media-label">Structure — Reading the Model Honestly</p>
+    <p class="chapter-desc">
+      I ran FEA on one lid, its supporting members, and its counterweights under that worst-case wind load
+      plus the counterweight mass. Two results needed judgment rather than face value. The model showed the
+      structure bending away from the motor bulkhead, but it leaves out the motor shaft, which stiffens that
+      region in the real assembly. It also showed a strain spike at one corner of the counterweight flange,
+      where the model leaves out the seam joint that reinforces the actual part.
+    </p>
+  </div>
+</section>
+
+<!-- ============ CHAPTER 04 ============ -->
+<section class="chapter" id="chapter-04">
+  <div class="section-head">
+    <span class="section-num">CHAPTER 04</span>
+    <h2>Outcome</h2>
+  </div>
+
+  <div class="chapter-body">
+    <div class="result-callout">
+      <span class="result-label">DESIGN WEIGHT</span>
+      <span class="result-value">−40%+</span>
+      <span class="result-label">VS. LEGACY ENCLOSURE</span>
+    </div>
+
+    <p class="chapter-desc">
+      The finished design is more than 40% lighter, bolts together without welding in the main frame, and
+      needs almost no motor torque to hold its lids open. It is being fielded across more than 20 systems.
+    </p>
+
+    <p class="chapter-desc">
+      The central decision was to treat actuation, structure, and assembly as one problem: counterbalance the
+      lids, send the closing loads into a hard stop, and build the frame from repeated parts.
+    </p>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer" id="contact">
+  <div class="footer-inner">
+    <img src="assets/headshot.jpg" alt="Teddy Rauchway" class="footer-photo">
+    <div class="footer-title-block">
+      <div class="tb-row"><span>DRAWN BY</span><span>T. Rauchway</span></div>
+      <div class="tb-row"><span>EMAIL</span><span><a href="mailto:tsr53@cornell.edu">tsr53@cornell.edu</a></span></div>
+      <div class="tb-row"><span>GITHUB</span><span><a href="https://github.com/trauchway" target="_blank" rel="noopener">github.com/trauchway</a></span></div>
+      <div class="tb-row"><span>LINKEDIN</span><span><a href="https://www.linkedin.com/in/teddy-rauchway-788741354" target="_blank" rel="noopener">linkedin.com/in/teddy-rauchway-788741354</a></span></div>
+      <div class="tb-row"><span>REV</span><span id="rev-date"></span></div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

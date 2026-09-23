@@ -13,6 +13,7 @@ index.html              Homepage — hero, project grid, skills-as-BOM, contact
 f1wing.html             Project page — F1 front wing CFD study
 uav.html                Project page — LIDAR hexacopter + scratch-built autopilot aircraft
 makerspace.html         Project page — Iron Man Mark III helmet build
+icr-enclosure.html      Project page — ICR motorized enclosure redesign (text + line drawing only)
 style.css               All styling (shared across every page)
 script.js               Shared behavior: footer date stamp, photo lightbox, homepage hero video reel
 
