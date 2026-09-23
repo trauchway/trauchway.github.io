@@ -983,3 +983,42 @@ a:focus-visible, span:focus-visible {
   .icr-page .result-callout { flex-direction: column; align-items: flex-start; gap: 8px; padding: 18px 20px; }
   .icr-page .feature-callout { padding: 18px 20px 4px; }
 }
+
+/* ============ HOME PAGE — MOBILE ============ */
+@media (max-width: 560px) {
+  .home-page .hero-actions .btn { flex: 1 1 100%; text-align: center; }
+
+  .home-page .project-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 28px 28px 60px;
+    background: none;
+    border: none;
+  }
+  .home-page .project-card { border: 1px solid var(--border); }
+  .home-page .project-card .tb-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    padding: 10px 14px;
+  }
+  .home-page .project-card .status-compact { white-space: normal; }
+  .home-page .project-desc { padding: 16px 14px; }
+  .home-page .project-links { padding: 0 14px 18px; }
+
+  .home-page .bom-intro { padding-top: 22px; }
+  .home-page .bom-table { display: block; width: auto; margin: 20px 28px 0; padding: 0; }
+  .home-page .bom-table thead { display: none; }
+  .home-page .bom-table tbody { display: block; }
+  .home-page .bom-table tr {
+    display: grid;
+    grid-template-columns: 34px 1fr;
+    column-gap: 10px;
+    row-gap: 6px;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .home-page .bom-table td { display: block; padding: 0; border: none; width: auto; }
+  .home-page .bom-table td:nth-child(3) { grid-column: 2; }
+  .home-page .about-note { padding-bottom: 60px; }
+}
