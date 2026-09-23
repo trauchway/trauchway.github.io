@@ -476,6 +476,11 @@ a:focus-visible, span:focus-visible {
   .about-photo { border-right: none; border-bottom: 1px solid var(--border); }
   .about-photo img { min-height: 440px; }
 }
+@media (max-width: 560px) {
+  .about-info { padding: 22px 18px 6px; gap: 28px; }
+  .about-info .tb-row { flex-direction: column; gap: 4px; padding: 11px 0; }
+  .about-info .tb-row > *:last-child { text-align: left; }
+}
 
 /* ============ FOOTER ============ */
 .footer { background: var(--bg); border-top: 1px solid var(--border); padding: 60px 28px; }
@@ -517,6 +522,10 @@ a:focus-visible, span:focus-visible {
 
 @media (max-width: 500px) {
   .section-head { padding-top: 54px; }
+  .nav-inner { padding: 14px 16px; gap: 10px; }
+  .nav-links { gap: 10px 12px; flex-wrap: wrap; justify-content: flex-end; }
+  .nav-links a { white-space: nowrap; letter-spacing: 0.04em; }
+  .nav-resume { padding: 7px 10px; }
 }
 
 /* ============ UAV PROJECT PAGE ============ */
