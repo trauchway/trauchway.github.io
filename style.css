@@ -964,33 +964,33 @@ a:focus-visible, span:focus-visible {
   .spec-table tbody th, .spec-table td, .spec-table thead th { padding: 12px 8px; }
 }
 
-/* ============ ICR ENCLOSURE PAGE — MOBILE ============ */
+/* ============ PROJECT PAGES — MOBILE ============ */
 @media (max-width: 560px) {
-  .icr-page .hero h1 { line-height: 1.08; }
-  .icr-page .hero-text { min-height: 0; padding-top: 72px; padding-bottom: 64px; }
-  .icr-page .hero-thesis { margin-bottom: 0; }
+  .project-page .hero h1 { line-height: 1.08; }
+  .project-page .hero-text { min-height: 0; padding-top: 72px; padding-bottom: 64px; }
+  .project-page .hero-thesis { margin-bottom: 0; }
 
-  .icr-page .chapter { padding-bottom: 48px; }
-  .icr-page .chapter .section-head {
+  .project-page .chapter { padding-bottom: 48px; }
+  .project-page .chapter .section-head {
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
     padding: 48px 0 18px;
   }
-  .icr-page .section-head h2 { font-size: 1.45rem; line-height: 1.2; }
-  .icr-page .chapter-body { padding-top: 28px; }
-  .icr-page .chapter-desc { margin-bottom: 28px; }
+  .project-page .section-head h2 { font-size: 1.45rem; line-height: 1.2; }
+  .project-page .chapter-body { padding-top: 28px; }
+  .project-page .chapter-desc { margin-bottom: 28px; }
 
-  .icr-page .chapter-info .tb-row {
+  .project-page .chapter-info .tb-row {
     flex-direction: column;
     align-items: flex-start;
     gap: 4px;
     padding: 10px 14px;
   }
-  .icr-page .chapter-info .status-compact { white-space: normal; }
+  .project-page .chapter-info .status-compact { white-space: normal; }
 
-  .icr-page .result-callout { flex-direction: column; align-items: flex-start; gap: 8px; padding: 18px 20px; }
-  .icr-page .feature-callout { padding: 18px 20px 4px; }
+  .project-page .result-callout { flex-direction: column; align-items: flex-start; gap: 8px; padding: 18px 20px; }
+  .project-page .feature-callout { padding: 18px 20px 4px; }
 }
 
 /* ============ HOME PAGE — MOBILE ============ */
