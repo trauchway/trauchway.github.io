@@ -182,6 +182,36 @@
   .card-with-image .card-title-row,
   .card-with-image .card-body p { margin-left: 0; }
 
+  /* ============ SKILLS ============ */
+  .skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 14px;
+    margin-bottom: 14px;
+  }
+  .skill-row {
+    display: flex;
+    gap: 8px;
+    border-bottom: 1px solid var(--border);
+    padding: 4px 0;
+    break-inside: avoid;
+  }
+  .skill-row span {
+    flex: 0 0 1.05in;
+    font-size: 8px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    padding-top: 1px;
+  }
+  .skill-row p {
+    font-family: 'Inter', sans-serif;
+    font-size: 8.3px;
+    line-height: 1.4;
+    color: var(--ink-dim);
+    margin: 0;
+  }
+
   /* ============ CLOSING ============ */
   .closing {
     border-top: 2px solid var(--border-strong);
@@ -203,7 +233,7 @@
 <div class="header">
   <div>
     <h1>Teddy S. Rauchway</h1>
-    <p class="role-line">Mechanical &amp; Aerospace Engineering — Cornell University, Expected May 2028</p>
+    <p class="role-line">B.S. Mechanical Engineering, Aerospace Minor — Cornell University, Expected May 2028</p>
   </div>
   <div class="contact-line">
     Ithaca, NY&nbsp;&nbsp;|&nbsp;&nbsp;(720) 275-9106<br>
@@ -213,10 +243,11 @@
 </div>
 
 <p class="intro">
-  I build and test hardware myself — from CAD and CFD through fabrication, integration, and field or flight
-  test — rather than stopping at a design review. That ownership runs from a classified defense enclosure
-  now planned for fielded deployment, to UAVs I've personally built, wired, and flown, to a self-taught CFD
-  study measuring real aerodynamic loads on a wing I designed from scratch.
+  I've been making things for as long as I can remember, from homemade fishing lures and Star Wars helmets
+  to model rockets and remote-controlled airplanes. Watching F-16s take off with my grandfather left me
+  wanting to design aircraft of my own, and that ambition still drives me. I love figuring out how things
+  work and turning my own ideas into working hardware: an enclosure now fielding to multiple defense systems,
+  UAVs I've built and flown, and a wing I designed from scratch and tested in CFD.
 </p>
 <p class="intro-note">
   Full project write-ups, CAD files, and build photos/videos available at the site linked above.
@@ -232,13 +263,14 @@
 
   <div class="card">
     <div class="card-title-row">
-      <strong>Classified Hardware Enclosure</strong>
-      <span class="card-org">ICR, Inc.</span>
+      <strong>ICR Enclosure Project</strong>
+      <span class="card-org">ICR, Inc. · Summer 2026</span>
     </div>
     <p>
-      Owned a classified defense hardware enclosure from concept to fielded systems — independently leading
-      CAD, CFD/FEA analysis, and production drawings for a multilayer protective enclosure balancing thermal,
-      structural, and sealing requirements. Now planned for integration across multiple fielded defense systems.
+      Led a clean-sheet redesign of the motorized enclosure that protects fielded defense equipment: a
+      split-lid design on a bolt-together, weld-free frame built from repeated parts, more than 40% lighter
+      than the legacy unit. Ran SolidWorks Motion, CFD (80 mph wind), and FEA, and produced the CAD and
+      drawings for manufacturing. Design complete and fielding to multiple systems.
     </p>
   </div>
 
@@ -271,8 +303,8 @@
       <p>
         Built and flew UAVs hands-on, not just designed them: as a Northfield High School (Denver, CO) student,
         worked in tandem with Lockheed Martin engineers to build a LIDAR-mapping hexacopter, running onboard
-        Raspberry Pi/LIDAR mapping software myself. Then cut, wired, and flight-tested a scratch-built
-        foamboard fixed-wing aircraft through several prototypes until it flew clean.
+        Raspberry Pi/LIDAR mapping software myself. Then designed, wired, and flight-tested a scratch-built
+        fixed-wing autopilot aircraft through several prototypes until it flew clean.
       </p>
     </div>
   </div>
@@ -289,15 +321,21 @@
     </p>
   </div>
 
-  <div class="card">
-    <div class="card-title-row">
-      <strong>Makerspace Builds</strong>
-      <span class="card-org">Cornell Maker Club</span>
+  <div class="card card-with-image">
+    <div class="card-thumb">
+      <img src="makerspace/iron/IMG_3377.jpg" alt="Unpainted 3D-printed Iron Man helmet shell with faceplate open, showing servo wiring">
     </div>
-    <p>
-      Ongoing personal robotics, mechatronics, and UAV-component projects in the Maker Club lab — motor
-      integration, custom gearboxes, and rapid-prototyped enclosures using CNC, electronics, and 3D printing.
-    </p>
+    <div class="card-body">
+      <div class="card-title-row">
+        <strong>Iron Man Mark III Helmet</strong>
+        <span class="card-org">Cornell Maker Club</span>
+      </div>
+      <p>
+        Built a functional articulating Iron Man helmet — servo motors coordinated by an Arduino, running on a
+        custom rechargeable battery pack built from reclaimed 18650 cells. Followed a guided Sesame robot build
+        first to learn the basics of servos and circuits.
+      </p>
+    </div>
   </div>
 
   <div class="card">
@@ -314,11 +352,26 @@
 
 </div>
 
+<div class="section-label">
+  <span class="num">SHEET 02</span>
+  <h2>Skills</h2>
+  <span class="rule"></span>
+</div>
+
+<div class="skills">
+  <div class="skill-row"><span>CAD &amp; Simulation</span><p>SolidWorks (CAD, assemblies, drawings, surfacing), SolidWorks Motion, Simulation (FEA) &amp; Flow (CFD), Fusion 360</p></div>
+  <div class="skill-row"><span>Fabrication</span><p>CNC mill &amp; lathe (Red Apron certified), sheet metal, soldering, composite surface work, laser cutting, hand &amp; power tools</p></div>
+  <div class="skill-row"><span>3D Printing</span><p>Bambu Lab, Elegoo, Anycubic — daily-driver FDM and resin printers</p></div>
+  <div class="skill-row"><span>Electromechanical</span><p>BLDC, brushed DC, servo &amp; stepper integration; ESCs; custom gearboxes; sensors; harness fabrication</p></div>
+  <div class="skill-row"><span>Electronics &amp; Code</span><p>Arduino, Raspberry Pi, STM32, Teensy, ESP32; Python; Bluetooth data integration; multimeter &amp; oscilloscope</p></div>
+  <div class="skill-row"><span>Manufacturing</span><p>Company PDM, tolerancing &amp; dimensioning, material selection, assembly documentation</p></div>
+</div>
+
 <div class="closing">
   <strong>Cornell Maker Club Executive Board</strong> (Jan 2026–Present) — overseeing makerspace lab
-  operations and training members on machinery and safety protocols — and <strong>Red Apron
-  certified</strong> (mill &amp; lathe), reflecting ongoing hands-on systems work and technical
-  leadership beyond individual projects.
+  operations, training members on machinery and safety, and staffing hackathons and build nights.
+  <strong>NCAA Division I</strong> sprint hurdler, Cornell Track &amp; Field. <strong>FAA Part 107</strong>
+  Remote Pilot · <strong>SSI Open Water</strong> Diver · English (fluent), Spanish (conversational).
 </div>
 
 </body>
